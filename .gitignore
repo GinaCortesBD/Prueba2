@@ -3,12 +3,13 @@ bin-debug/
 bin-release/
 [Oo]bj/
 [Bb]in/
+package/
+package-lock/
+node_modules/
 
 # Other files and folders
 .settings/
-.package/
-.package-lock/
-.node_modules/
+
 
 
 # Executables
