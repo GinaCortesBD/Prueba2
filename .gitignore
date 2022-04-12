@@ -6,6 +6,10 @@ bin-release/
 
 # Other files and folders
 .settings/
+.package/
+.package-lock/
+.node_modules/
+
 
 # Executables
 *.swf
