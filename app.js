@@ -1,7 +1,7 @@
 const express = require('express')
 const routerStatus = require('./router/status')
 const cors = require('cors')
-
+const routerPerson=require('./router/person')
 
 const port = process.env.PORT || 8080
 
@@ -14,6 +14,9 @@ const corsOptions={
         callback(null,true)
     }
 }
+
+//CORS (Seguridad para ver si el dominio es valido)
+//Validar la información
 app.use(cors(corsOptions))
 
 
@@ -33,7 +36,7 @@ console.log(`Server is ready ${port}`)
 
 app.use('/', routerStatus)
 
-//CORS (Seguridad para ver si el dominio es valido)
-//Validar la información
+app.use('/person', routerPerson)
+
 
 
