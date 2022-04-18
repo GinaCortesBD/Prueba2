@@ -19,6 +19,7 @@ const corsOptions={
 //Validar la información
 app.use(cors(corsOptions))
 
+//aplication/x-www
 
 app.use(express.urlencoded({extended: true}))
 
@@ -27,7 +28,6 @@ app.use(express.json())
 
 
 // Asignacion Puerto
-
 app.listen(port, ()=>{
 console.log(`Server is ready ${port}`)
 })
