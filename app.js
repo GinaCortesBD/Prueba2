@@ -3,7 +3,7 @@ const routerStatus = require('./router/status')
 const cors = require('cors')
 const routerPerson=require('./router/person')
 
-const port = process.env.PORT || 8080
+const port =8080
 
 const app =express()
 
